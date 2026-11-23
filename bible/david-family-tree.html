@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>다윗 가문 가계도 — 역대상 2장·3장</title>
+<style>
+  :root { --line:#94a3b8; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; background:#f8fafc; color:#1e293b; padding:24px; }
+  h1 { font-size:22px; margin-bottom:4px; }
+  .sub { color:#64748b; font-size:13px; margin-bottom:20px; }
+  .tree { display:flex; flex-direction:column; gap:8px; overflow-x:auto; padding-bottom:16px; }
+  .gen { display:flex; align-items:flex-start; gap:12px; min-width:max-content; padding-left:8px; }
+  .node { background:#fff; border:2px solid #cbd5e1; border-radius:10px; padding:8px 12px; text-align:center; min-width:120px; box-shadow:0 1px 3px rgba(0,0,0,.08); position:relative; }
+  .node .name { font-weight:bold; font-size:14px; }
+  .node .ref { font-size:11px; color:#64748b; display:block; margin-top:2px; }
+  .node.hero { border-color:#3b82f6; background:#eff6ff; }
+  .node.david { border-color:#f59e0b; background:#fffbeb; }
+  .node.tragic { border-color:#ef4444; background:#fef2f2; }
+  .node.sister { border-color:#a855f7; background:#faf5ff; }
+  .node .note { font-size:11px; color:#475569; margin-top:4px; }
+  ul.branch { list-style:none; display:flex; flex-direction:column; gap:8px; }
+  ul.branch > li { display:flex; align-items:center; gap:12px; }
+  ul.branch > li::before { content:""; display:inline-block; width:24px; height:2px; background:var(--line); }
+  .kids { display:flex; gap:10px; flex-wrap:wrap; }
+  .tag { display:inline-block; font-size:11px; padding:1px 6px; border-radius:8px; background:#e2e8f0; color:#475569; }
+  table { border-collapse:collapse; width:100%; max-width:900px; background:#fff; margin-top:24px; font-size:13px; }
+  th,td { border:1px solid #e2e8f0; padding:6px 10px; text-align:left; }
+  th { background:#f1f5f9; }
+  .legend { display:flex; gap:14px; margin:12px 0 24px; font-size:12px; flex-wrap:wrap; }
+  .legend span { display:inline-flex; align-items:center; gap:4px; }
+  .dot { width:12px; height:12px; border-radius:3px; display:inline-block; border:2px solid; }
+</style>
+</head>
+<body>
+<h1>다윗 가문 가계도</h1>
+<div class="sub">역대상 2:13-17, 3:1-9 및 사무엘상·하 종합</div>
+
+<div class="legend">
+  <span><i class="dot" style="border-color:#f59e0b;background:#fffbeb"></i>다윗</span>
+  <span><i class="dot" style="border-color:#3b82f6;background:#eff6ff"></i>핵심 인물</span>
+  <span><i class="dot" style="border-color:#ef4444;background:#fef2f2"></i>비극적 결말</span>
+  <span><i class="dot" style="border-color:#a855f7;background:#faf5ff"></i>다윗의 누이</span>
+</div>
+
+<div class="tree">
+
+  <div class="node"><span class="name">이세</span><span class="ref">대상 2:13-17</span></div>
+  <ul class="branch">
+    <li><div class="kids">
+      <div class="node"><span class="name">엘리압</span><span class="ref">장자 · 삼상 16:6</span></div>
+      <div class="node"><span class="name">아비나답</span><span class="ref">삼상 16:8</span></div>
+      <div class="node"><span class="name">시므아(삼마)</span><span class="ref">삼상 16:9</span></div>
+      <div class="node"><span class="name">느다넬</span><span class="ref">대상 2:14</span></div>
+      <div class="node"><span class="name">랏대</span><span class="ref">대상 2:14</span></div>
+      <div class="node"><span class="name">오셈</span><span class="ref">대상 2:15</span></div>
+      <div class="node david"><span class="name">다윗</span><span class="ref">이스라엘 왕</span></div>
+    </div></li>
+    <li><div class="kids">
+      <div class="node sister"><span class="name">스루야</span><span class="ref">다윗의 누이</span></div>
+      <div class="node sister"><span class="name">아비가일</span><span class="ref">다윗의 누이 · 삼하 17:25</span></div>
+    </div></li>
+  </ul>
+
+  <div style="height:18px"></div>
+  <div class="node sister"><span class="name">스루야의 자녀</span><span class="ref">다윗의 조카들</span></div>
+  <ul class="branch">
+    <li><div class="kids">
+      <div class="node hero"><span class="name">아비새</span><span class="ref">대상 20:6-8</span><div class="note">다윗의 대표 용사</div></div>
+      <div class="node hero"><span class="name">요압</span><span class="ref">삼하 3, 18, 20장</span><div class="note">군대장관 · 왕상 2장에서 처형</div></div>
+      <div class="node tragic"><span class="name">아사헬</span><span class="ref">삼하 2:18-23</span><div class="note">아브넬에게 피살</div></div>
+    </div></li>
+  </ul>
+
+  <div style="height:8px"></div>
+  <div class="node sister"><span class="name">아비가일의 자녀</span><span class="ref">아버지: 이델(예델)</span></div>
+  <ul class="branch">
+    <li><div class="kids">
+      <div class="node tragic"><span class="name">아마샤</span><span class="ref">삼하 17:25; 20:8-12</span><div class="note">압살롬의 장관 → 귀순 → 요압에게 피살</div></div>
+    </div></li>
+  </ul>
+
+  <div style="height:18px"></div>
+  <div class="node david"><span class="name">다윗의 아들들 — 헤브론</span><span class="ref">대상 3:1-4 · 재위 7년 6개월</span></div>
+  <ul class="branch">
+    <li><div class="kids">
+      <div class="node tragic"><span class="name">암논</span><span class="ref">어머니 아히노암</span><div class="note">삼하 13장 · 압살롬에게 피살</div></div>
+      <div class="node"><span class="name">다니엘</span><span class="ref">어머니 아비가일</span></div>
+      <div class="node tragic"><span class="name">압살롬</span><span class="ref">어머니 마아가</span><div class="note">반란 · 삼하 15-18장</div></div>
+      <div class="node tragic"><span class="name">아도니야</span><span class="ref">어머니 학깃</span><div class="note">왕위 다툼 · 왕상 1-2장</div></div>
+      <div class="node"><span class="name">스바댜</span><span class="ref">어머니 아비달</span></div>
+      <div class="node"><span class="name">이드로암</span><span class="ref">어머니 에글라</span></div>
+    </div></li>
+  </ul>
+
+  <div style="height:8px"></div>
+  <div class="node david"><span class="name">다윗의 아들들 — 예루살렘</span><span class="ref">대상 3:5-9</span></div>
+  <ul class="branch">
+    <li><div class="kids" style="flex-direction:column; align-items:flex-start; gap:8px;">
+      <div class="kids">
+        <span class="tag">밧세바(바스수아) 소생</span>
+        <div class="node"><span class="name">스마</span></div>
+        <div class="node"><span class="name">소밥</span></div>
+        <div class="node hero"><span class="name">나단</span><span class="ref">눅 3:31 계열</span></div>
+        <div class="node hero"><span class="name">솔로몬</span><span class="ref">마 1:6 계열 · 왕위 계승</span></div>
+      </div>
+      <div class="kids">
+        <span class="tag">기타 소생 15인 중 9인 (대상 3:6-8)</span>
+        <div class="node">이발</div><div class="node">엘리사마</div><div class="node">엘리벨렛</div><div class="node">노가</div>
+        <div class="node">네벡</div><div class="node">야비야</div><div class="node">엘리사마</div><div class="node">엘리아다</div><div class="node">엘리벨렛</div>
+      </div>
+    </div></li>
+  </ul>
+
+  <div style="height:8px"></div>
+  <ul class="branch">
+    <li><div class="kids">
+      <div class="node sister"><span class="name">다말 (딸)</span><span class="ref">어머니 마아가 · 삼하 13:1</span><div class="note">압살롬의 친누이</div></div>
+    </div></li>
+  </ul>
+
+</div>
+
+<h2 style="margin-top:32px; font-size:16px;">성경 읽기 핵심 연결고리</h2>
+<table>
+  <tr><th>인물</th><th>관계</th><th>왜 중요한가</th></tr>
+  <tr><td><b>요압</b></td><td>다윗의 조카 (스루야의 아들)</td><td>다윗 군대의 실권자. 다윗이 임종에 처형을 솔로몬에게 부탁할 정도로 힘이 셌던 인물</td></tr>
+  <tr><td><b>아비새</b></td><td>요압의 동생, 조카</td><td>다윗의 최측근 용사</td></tr>
+  <tr><td><b>아사헬</b></td><td>요앱의 동생, 조카</td><td>기브온 전투에서 요압 대 아브넬 대립 구도의 출발점</td></tr>
+  <tr><td><b>아마샤</b></td><td>다윗의 조카 (아비가일의 아들)</td><td>압살롬 반란군 장관 → 귀순. 요압과의 갈등 구도의 핵심</td></tr>
+  <tr><td><b>엘리압</b></td><td>다윗의 큰형</td><td>다윗의 겸손을 부각시키는 대조 인물</td></tr>
+  <tr><td><b>암논·압살롬·아도니야</b></td><td>다윗의 아들들</td><td>다윗 가문 내부 비극의 삼각축 (다말 사건 → 압살롬 반란 → 아도니야 반역)</td></tr>
+  <tr><td><b>나단·솔로몬</b></td><td>다윗의 아들들</td><td>두 메시아 족보 계열 (눅가의 나단, 마태의 솔로몬)</td></tr>
+</table>
+</body>
+</html>
